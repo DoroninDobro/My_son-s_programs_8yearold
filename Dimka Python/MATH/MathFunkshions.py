@@ -159,10 +159,40 @@ def skrdrob(ch,zn):
     D = [CH,ZN]
     return D
 
-k = skrdrob(32,64)
-print(k)
+def NOK(x,y):
+    w = y
+    NOK = -45
+    while  NOK != w:
+        if  w%y == 0 and w%x == 0:
+            NOK = w
+        else:
+            w = w + y
+    return NOK
+
+def ery(x,y):
+    g = 1
+    w = []
+    h = y
+    r = 0
+    while  h > 0.1:
+        w.append(h%x)
+        h = round(h / x)
+    e = len(w)
+    for v in range(e-1,0,-1):
+        j = (10 ** v) * w[v]
+        r = r + j
+    return r
+
+f = ery(2,456)
+print(f)
+        
+        
+        
+        
+        
     
 
+    
 
 
 
